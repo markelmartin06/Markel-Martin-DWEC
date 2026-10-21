@@ -1,6 +1,2 @@
-// Seleccionar todos los enlaces cuyo href contiene "://"
-const externos = document.querySelectorAll('a[href*="://"]');
-// Pintar cada enlace externo de naranja
-externos.forEach(enlace => {
-     enlace.style.color = 'orange';
-});
+// Añadir la clase "externo" a todos los enlaces cuyo href contiene "://"
+document.querySelectorAll('a[href*="://"]').forEach(a => a.classList.add('externo'));
